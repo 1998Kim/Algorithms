@@ -10,5 +10,5 @@ def solution(n):
             answer += '4'
         else:
             answer += str(rest)
-    print(answer, "".join(reversed(answer)))
+    # print(answer, "".join(reversed(answer)))
     return answer[::-1]
