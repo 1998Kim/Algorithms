@@ -12,5 +12,5 @@ def solution(n):
             answer += str(rest)
     # print(answer, "".join(reversed(answer)))
     # 역정렬 필요함
-    # reverse와 join은 시간초과
+    # join과 reversed은 시간초과
     return answer[::-1]
