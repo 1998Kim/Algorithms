@@ -13,15 +13,14 @@ def factorial(n):
 def solution(n, k):
     answer = []
     people = [i+1 for i in range(n)]
-    print('people: ', people)
+
     while (n != 0):
         now = factorial(n-1)
         rest = k % now
-        if rest != 0:
+        if rest != 0: # rest가 0이 아니면 x배수에서 x가 index가 됨
             index = k // now
-        else:
+        else:  # rest가 0이면 x배수에서 x - 1이 index가 됨
             index = (k // now) - 1
-        # answer.append(people[index])
         answer.append(people[index])
         del people[index]
         n -= 1
