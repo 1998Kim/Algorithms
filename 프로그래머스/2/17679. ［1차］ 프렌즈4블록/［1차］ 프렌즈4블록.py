@@ -20,7 +20,7 @@ def solution(m, n, board):
                             check[new_y][x] = True
                             change_state = True
                             break
-                    # print(f"빈자리: {(x, y)}, 바꿀 좌표: {(x, new_y)}, 바꿀 수 있나: {change_state}")
+                    
                     if change_state:
                         board[y] = board[y][:x] + board[new_y][x]+ board[y][x+1:]
                         board[new_y] = board[new_y][:x] + 'X' + board[new_y][x+1:]
