@@ -1,13 +1,13 @@
 def solution(m, musicinfos):
     answer = '(None)'
     answer_time = 0
-    m = m.replace('A#', 'H').replace('C#', 'I').replace('D#', 'J').replace('F#', 'K').replace('G#', 'L')
+    m = m.replace('A#', 'a').replace('C#', 'c').replace('D#', 'd').replace('F#', 'f').replace('G#', 'g')
     
     for music in musicinfos:
         start, end, name, melody = music.split(',')
         start_hour, start_min = start.split(':')
         end_hour, end_min = end.split(':')
-        melody = melody.replace('A#', 'H').replace('C#', 'I').replace('D#', 'J').replace('F#', 'K').replace('G#', 'L')
+        melody = melody.replace('A#', 'a').replace('C#', 'c').replace('D#', 'd').replace('F#', 'f').replace('G#', 'g')
         
         play_time = (int(end_hour) * 60 + int(end_min)) - (int(start_hour) * 60 + int(start_min))
         
