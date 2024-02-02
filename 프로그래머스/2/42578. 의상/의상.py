@@ -1,5 +1,3 @@
-from itertools import combinations
-
 def solution(clothes):
     answer = 1
     clothes_dict = {}
@@ -11,6 +9,5 @@ def solution(clothes):
     
     for name in clothes_dict.keys():
         answer = answer * (clothes_dict[name] + 1)
-    
     
     return answer-1
