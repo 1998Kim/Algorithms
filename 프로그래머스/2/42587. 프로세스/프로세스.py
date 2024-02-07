@@ -6,13 +6,12 @@ def solution(priorities, location):
     while True:
         now = new.pop(0)
         
-        if int(now) >= max(priorities):
+        if int(now) == max(priorities):
+            answer += 1
             if type(now) == str:
-                answer += 1
                 break
             else:
                 del priorities[priorities.index(max(priorities))]
-                answer += 1
         else:
             new.append(now)
 
