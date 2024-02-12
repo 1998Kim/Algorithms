@@ -28,6 +28,7 @@ def dfs(numbers, target, depth, value):
         if value == target:
             answer += 1
         return
+
     dfs(numbers, target, depth +1, value + numbers[depth])
     dfs(numbers, target, depth +1, value - numbers[depth])
 
