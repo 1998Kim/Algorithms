@@ -39,4 +39,4 @@ def solution(p):
                 answer += ')'
             elif u[index] == ')':
                 answer += '('
-        return answer
+    return answer
