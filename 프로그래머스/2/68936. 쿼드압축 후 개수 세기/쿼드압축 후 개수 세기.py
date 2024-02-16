@@ -4,17 +4,7 @@ def solution(arr):
     n_dict = {2**i: i for i in range(11)}
     n = n_dict[len(arr)]
     
-    total_area = 0
-    for y in range(len(arr)):
-        total_area += sum(arr[y])
-    
-    if (2**n) == (total_area**0.5):
-        if total_area == 0:
-            return [1, 0]
-        else:
-            return [0, 1]
-
-    for i in range(n-1, 0, -1):
+    for i in range(n, 0, -1):
         s = 2**i 
         i_coords = []
 
