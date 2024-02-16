@@ -1,5 +1,3 @@
-from itertools import permutations
-from itertools import combinations
 from itertools import product
 
 def solution(arr):
@@ -7,7 +5,7 @@ def solution(arr):
     n = n_dict[len(arr)]
     
     grid = [i for i in range(1, 2**n, 2)]
-    coords = list(product(grid, repeat=2)) # 영역의 우하단점이 될 수 있는 모든 점들
+    coords = list(product(grid, repeat=2))
 
     total_area = 0
     for y in range(len(arr)):
