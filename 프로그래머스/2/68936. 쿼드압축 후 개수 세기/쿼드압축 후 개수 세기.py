@@ -4,9 +4,6 @@ def solution(arr):
     n_dict = {2**i: i for i in range(11)}
     n = n_dict[len(arr)]
     
-    grid = [i for i in range(1, 2**n, 2)]
-    coords = list(product(grid, repeat=2))
-
     total_area = 0
     for y in range(len(arr)):
         total_area += sum(arr[y])
