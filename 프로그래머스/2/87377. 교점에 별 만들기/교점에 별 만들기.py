@@ -18,7 +18,6 @@ def solution(line):
                 max_y = max(max_y, int(y))
                 min_y = min(min_y, int(y))
 
-    coords.sort(key=lambda x: (x[1], x[0]), reverse=True)
     answer = [['.' for _ in range(max_x - min_x+1)] for _ in range(max_y - min_y+1)]
     
     for x, y in coords:
