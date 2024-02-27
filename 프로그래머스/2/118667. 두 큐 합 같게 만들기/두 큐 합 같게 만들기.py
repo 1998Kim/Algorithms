@@ -4,7 +4,7 @@ def solution(queue1, queue2):
     answer = 0
     queue1 = deque(queue1)
     queue2 = deque(queue2)
-    max_cnt = len(queue1) * 4
+    max_cnt = len(queue1) * 4 - 1
     total1 = sum(queue1)
     total2 = sum(queue2)
     
